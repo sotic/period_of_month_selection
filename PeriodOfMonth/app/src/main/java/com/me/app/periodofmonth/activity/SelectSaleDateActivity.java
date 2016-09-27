@@ -244,8 +244,8 @@ public class SelectSaleDateActivity extends AppCompatActivity implements View.On
                 selectingDate = SELECTING_DATE_START;
                 break;
             case R.id.ll_selected_end_sale_date:
-                if(TextUtils.isEmpty(startSaleDate)) {//无上市时间，下市时间不可点
-                    Toast.makeText(this, "请首先选择上市时间", Toast.LENGTH_SHORT).show();
+                if(TextUtils.isEmpty(startSaleDate)) {//无开始日期，结束日期不可点
+                    Toast.makeText(this, "请首先选择开始日期", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if(selectingDate == SELECTING_DATE_END && rv_selectable_dates.isShown()) {//再次点击，收起list
@@ -271,7 +271,7 @@ public class SelectSaleDateActivity extends AppCompatActivity implements View.On
                 break;
             case R.id.tv_select_dates_done:
                 if(TextUtils.isEmpty(startSaleDate)) {
-                    Toast.makeText(this, "请选择开始时间", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "请选择开始日期", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 Intent intent = new Intent();

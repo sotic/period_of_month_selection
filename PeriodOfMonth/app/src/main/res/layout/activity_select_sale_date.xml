@@ -31,7 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="上市时间" />
+                android:text="开始日期" />
 
             <TextView
                 android:id="@+id/tv_selected_start_sale_date"
@@ -68,7 +68,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="下市时间" />
+                android:text="结束日期" />
 
             <TextView
                 android:id="@+id/tv_selected_end_sale_date"

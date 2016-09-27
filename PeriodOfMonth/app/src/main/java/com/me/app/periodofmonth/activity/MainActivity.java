@@ -65,6 +65,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 int startOffset = Integer.parseInt(et_start_date_offset.getText().toString());
                 int endOffset = Integer.parseInt(et_end_date_offset.getText().toString());
+                if(startOffset >= endOffset) {
+                    Toast.makeText(MainActivity.this, "end date should be larger than start date", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 startActivityForResult(SelectSaleDateActivity.getIntent2Me(MainActivity.this, startOffset, endOffset, null, null), REQUEST_CODE_DATE);
                 break;
             }
