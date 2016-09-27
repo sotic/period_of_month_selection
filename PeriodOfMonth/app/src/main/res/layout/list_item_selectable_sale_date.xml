@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_selectable_date_year"
+        style="@style/font_28b3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="50dp"
+        android:paddingTop="18dp"
+        android:text=""
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp">
+
+        <TextView
+            android:id="@+id/tv_selectable_date_month"
+            style="@style/font_28b1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="月" />
+
+        <TextView
+            android:id="@+id/tv_selectable_date_month_p1"
+            style="@style/font_28b3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="9dp"
+            android:background="@drawable/selector_green_grey_stroke_with_corners_px_2"
+            android:paddingBottom="8dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingTop="8dp"
+            android:text="上旬" />
+
+        <TextView
+            android:id="@+id/tv_selectable_date_month_p2"
+            style="@style/font_28b3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="9dp"
+            android:background="@drawable/selector_green_grey_stroke_with_corners_px_2"
+            android:paddingBottom="8dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingTop="8dp"
+            android:text="中旬" />
+
+        <TextView
+            android:id="@+id/tv_selectable_date_month_p3"
+            style="@style/font_28b3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="9dp"
+            android:background="@drawable/selector_green_grey_stroke_with_corners_px_2"
+            android:paddingBottom="8dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingTop="8dp"
+            android:text="下旬" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_list_bottom_hint"
+        style="@style/font_28b2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="25dp"
+        android:text="建议供货时间在同一年内选择"
+        android:visibility="gone" />
+
+</LinearLayout>

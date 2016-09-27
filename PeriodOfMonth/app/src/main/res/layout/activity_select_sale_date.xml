@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_page_select_sale_date"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:paddingTop="18dp">
+
+        <LinearLayout
+            android:id="@+id/ll_selected_start_sale_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_grey_stroke_with_corners_px_6"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                style="@style/font_32b3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="上市时间" />
+
+            <TextView
+                android:id="@+id/tv_selected_start_sale_date"
+                style="@style/font_32g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:text="请选择" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/icon_selected_dates_connector" />
+
+        <LinearLayout
+            android:id="@+id/ll_selected_end_sale_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_grey_stroke_with_corners_px_6"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                style="@style/font_32b3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="下市时间" />
+
+            <TextView
+                android:id="@+id/tv_selected_end_sale_date"
+                style="@style/font_32g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:text="请选择" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bg_selected_dates_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@drawable/bg_selected_dates_bottom_left"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_selectable_dates"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2"
+        android:cacheColorHint="@null"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_select_dates_done"
+        style="@style/font_36w"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_grey_solid_with_corners_px_4"
+        android:gravity="center"
+        android:text="选好了"
+        android:visibility="gone" />
+
+</LinearLayout>
